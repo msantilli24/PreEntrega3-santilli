@@ -1,0 +1,400 @@
+@import "contacto";
+@import "productos";
+@import "quienesSomos";
+
+
+ *{
+    padding: 0;
+    margin:0;
+  }
+a {
+  text-decoration: none;
+  color: rgb(163, 160, 160);
+ }
+
+ ul {
+  list-style: none;
+ }
+
+ img {
+  max-width: 100%;
+  
+ }
+
+
+
+ /* DESKTOP FIRST */
+ /* LA GRILLA PRINCIPAL */
+
+ #grilla-focus {
+  display: grid;
+
+  grid-template-areas:
+  "cabecera cabecera cabecera"
+  "productos productos productos"
+  "slider slider slider "
+  "quienes quienes quienes"
+  "banner banner banner"
+  "footer footer footer";
+
+  grid-template-columns: repeat(3, 1fr);
+  background-image: radial-gradient(rgb(221, 221, 216), rgb(255, 255, 17), rgb(0, 19, 0))
+ }
+ 
+
+/*HEADER O CABECERA*/
+#header-Focus {
+  grid-area:cabecera ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4rem;
+  background-color: rgb(230, 231, 226);
+  
+  
+}
+
+
+@media screen and (max-width: 767px) {
+  #header-Focus {
+     flex-direction: column;
+  }
+}
+
+.logo  {
+  height: 20rem;
+}
+
+#navegacion-focus {
+  display: flex;
+  gap: .8rem;
+
+  
+}
+
+@media screen and (max-width: 399px) {
+  #navegacion-focus {
+     flex-direction: column;
+  }
+}
+
+#navegacion-focus li {
+  background-color: rgb(238, 234, 11);
+  padding: .3rem 1rem;
+ }
+
+/*PRODUCTOS*/
+#productos-focus {
+  grid-area:productos;
+}
+
+#productos-focus h2,
+#productos-focus p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.padre-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .padre-cards {
+     grid-template-columns: repeat(2, 1fr 2) ;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padre-cards {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+.card-focus {
+  width: 16rem;
+  border: solid 2px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+ img {
+    height: 12rem;}
+
+    img:hover{transform: scale(2);}
+}
+
+
+
+/*productos slider*/
+
+
+/*BANNER*/
+#banner-focus {
+  grid-area: banner;
+  background-color: #eaeaea;
+  margin-top: 4rem;
+  padding: 2rem;
+
+  h2{text-align: center;}
+}
+
+
+
+.padre-banners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .padre-banners {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padre-banners {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+.banners-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+/*FOOTER */
+#footer {
+  grid-area: footer;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(163, 160, 160);
+
+  ul{list-style: none;}
+  img{max-width: 100%;}
+ }
+
+
+
+ /* DESKTOP FIRST */
+ /* LA GRILLA PRINCIPAL */
+
+ #grilla-focus {
+  display: grid;
+
+  grid-template-areas:
+  "cabecera cabecera cabecera"
+  "productos productos productos"
+  "slider slider slider "
+  "quienes quienes quienes"
+  "banner banner banner"
+  "footer footer footer";
+
+  grid-template-columns: repeat(3, 1fr);
+  background-image: radial-gradient(rgb(221, 221, 216), rgb(255, 255, 17), rgb(0, 19, 0))
+ }
+ 
+
+/*HEADER O CABECERA*/
+#header-Focus {
+  grid-area:cabecera ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4rem;
+  background-color: rgb(230, 231, 226);
+  
+}
+
+
+@media screen and (max-width: 767px) {
+  #header-Focus {
+     flex-direction: column;
+  }
+}
+
+.logo  {
+  height: 20rem;
+}
+
+#navegacion-focus {
+  display: flex;
+  gap: .8rem;
+}
+
+@media screen and (max-width: 399px) {
+  #navegacion-focus {
+     flex-direction: column;
+  }
+}
+
+#navegacion-focus li {
+  background-color: rgb(238, 234, 11);
+  padding: .3rem 1rem;
+ }
+
+/*PRODUCTOS*/
+#productos-focus {
+  grid-area:productos;
+
+  h2,p{text-align: center;padding: 1rem;}
+}
+
+
+.padre-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .padre-cards {
+     grid-template-columns: repeat(2, 1fr 2) ;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padre-cards {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+.card-focus {
+  width: 16rem;
+  border: solid 2px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  img{height: 12rem;}
+
+  img:hover{transform: scale(2);}
+}
+
+/*productos slider*/
+
+
+/*BANNER*/
+#banner-focus {
+  grid-area: banner;
+  background-color: #eaeaea;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+#banner-focus h2 {
+  text-align: center;
+}
+
+.padre-banners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .padre-banners {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padre-banners {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+.contacto__fonts{
+ font-size: small;
+ border: solid 2px gray;
+width: 40rem;
+margin:3%;
+}
+.banners-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+#quienessomos{
+ position: relative;
+ grid-area: quienes;
+ width: 100%;
+ margin: 2rem;
+
+}
+
+#sliderauto{
+ position: relative;
+ grid-area: slider;
+ width: 100%;
+
+ 
+}
+
+
+.slider img{
+
+ 
+ width:100%;
+ margin:auto;
+ padding: 1rem;;
+ 
+
+ 
+} 
+ 
+
+  
+
+
+.slider li{
+ 
+ width: 100%;
+ list-style: none;
+ 
+ 
+}
+
+@keyframes cambio {
+
+ 0% {margin-left:0%;}
+  20%{margin-left:0;}
+
+  25%{margin-left:-20% ;}
+  30%{margin-left:-20% ;}
+
+  40%{margin-left:-40% ;}
+  55%{margin-left:-40% ;}
+
+  60%{margin-left:-50% ;}
+  75%{margin-left:-50% ;}
+ 
+
+
+}
+
+/*FOOTER */
+#footer {
+  grid-area: footer;
+}
+
