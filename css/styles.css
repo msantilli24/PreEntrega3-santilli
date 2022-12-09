@@ -1,46 +1,10 @@
 .contacto__fonts {
+  text-align: center;
+  display: flex;
   font-size: small;
   border: solid 2px gray;
   width: 40rem;
   margin: 3%; }
-
-#sliderauto {
-  position: relative;
-  grid-area: slider;
-  width: 100%; }
-
-.slider img {
-  width: 100%;
-  margin: auto;
-  padding: 1rem; }
-
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 100%;
-  animation: cambio 20s infinite alternate linear; }
-
-.slider li {
-  width: 100%;
-  list-style: none; }
-
-@keyframes cambio {
-  0% {
-    margin-left: 0%; }
-  20% {
-    margin-left: 0; }
-  25% {
-    margin-left: -20%; }
-  30% {
-    margin-left: -20%; }
-  40% {
-    margin-left: -40%; }
-  55% {
-    margin-left: -40%; }
-  60% {
-    margin-left: -50%; }
-  75% {
-    margin-left: -50%; } }
 
 #quienessomos {
   position: relative;
@@ -88,7 +52,8 @@ img {
 
 #navegacion-focus {
   display: flex;
-  gap: .8rem; }
+  gap: .8rem;
+  align-items: center; }
 
 @media screen and (max-width: 399px) {
   #navegacion-focus {
